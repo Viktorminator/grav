@@ -7,6 +7,7 @@ metadata:
 process:
     markdown: true
     twig: true
+child_type: item
 content:
     items: '@self.children'
     limit: 5

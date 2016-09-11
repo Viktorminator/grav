@@ -1,5 +1,10 @@
 ---
 title: Главная
+published: true
+metadata:
+    yandex-verification: 6aa57092283135b8
+body_classes: 'modular header-image fullwidth'
+menu: Главная
 content:
     items: '@self.modular'
     order:
@@ -11,11 +16,6 @@ content:
             - _callout
             - _features
             - _tutorial
-published: true
-metadata:
-    yandex-verification: 6aa57092283135b8
-body_classes: 'modular header-image fullwidth'
-menu: Главная
 onpage_menu: true
 ---
 
