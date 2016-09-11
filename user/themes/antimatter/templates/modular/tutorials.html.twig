@@ -1,0 +1,31 @@
+<div class="modular-row tutorials {{ page.header.class}}">
+    {{ content }}
+    <div class="tutorial-items">
+        {% for tutorial in page.header.tutorials %}
+        <div class="tutorial">
+            {% if tutorial.icon %}
+            <div class="glyph fs1">
+                <div class="clearfix pbs">
+                    <svg class="micon micon-{{ tutorial.icon }}">
+                        <use xlink:href="#micon-{{ tutorial.icon }}"></use></svg>
+                </div>
+            </div>
+            <div class="tutorial-content icon-offset">
+                {% else %}
+                <div class="tutorial-content">
+                    {% endif %}
+                    {% if tutorial.header %}
+                        {% if tutorial.link %}
+                            <h4><a href="{{ tutorial.link }}">{{ tutorial.header }}</a></h4>
+                        {% else %}
+                            <h4>{{ tutorial.header }}</h4>
+                        {% endif %}
+                    {% endif %}
+                    {% if tutorial.text %}
+                        <p>{{ tutorial.text }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>

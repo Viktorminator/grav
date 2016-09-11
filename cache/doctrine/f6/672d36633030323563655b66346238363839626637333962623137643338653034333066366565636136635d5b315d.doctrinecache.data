@@ -1,0 +1,67 @@
+1473287258
+a:2:{s:7:"content";s:3742:"<div class="modular-row tutorials ">
+    
+    <div class="tutorial-items">
+                <div class="tutorial">
+                        <div class="glyph fs1">
+                <div class="clearfix pbs">
+                    <svg class="micon micon-laravel">
+                        <use xlink:href="#micon-laravel"></use></svg>
+                </div>
+            </div>
+            <div class="tutorial-content icon-offset">
+                                                                                        <h4><a href="/laravel-uroki ">Laravel уроки</a></h4>
+                                                                                        <p>Самый популярный php-фреймворк</p>
+                                    </div>
+            </div>
+                    <div class="tutorial">
+                        <div class="glyph fs1">
+                <div class="clearfix pbs">
+                    <svg class="micon micon-meteor">
+                        <use xlink:href="#micon-meteor"></use></svg>
+                </div>
+            </div>
+            <div class="tutorial-content icon-offset">
+                                                                                        <h4><a href="/meteorjs-uroki">MeteorJS</a></h4>
+                                                                                        <p>Создание приложения реального времени</p>
+                                    </div>
+            </div>
+                    <div class="tutorial">
+                        <div class="glyph fs1">
+                <div class="clearfix pbs">
+                    <svg class="micon micon-react">
+                        <use xlink:href="#micon-react"></use></svg>
+                </div>
+            </div>
+            <div class="tutorial-content icon-offset">
+                                                                                        <h4><a href="/reactjs-uroki">ReactJS</a></h4>
+                                                                                        <p>Разработка приложений для мобильных устройств с помощью популярной библиотеки</p>
+                                    </div>
+            </div>
+                    <div class="tutorial">
+                        <div class="glyph fs1">
+                <div class="clearfix pbs">
+                    <svg class="micon micon-phalcon">
+                        <use xlink:href="#micon-phalcon"></use></svg>
+                </div>
+            </div>
+            <div class="tutorial-content icon-offset">
+                                                                                        <h4><a href="/phalcon-uroki">Phalcon уроки</a></h4>
+                                                                                        <p>Самый быстрый php-фреймворк</p>
+                                    </div>
+            </div>
+                    <div class="tutorial">
+                        <div class="glyph fs1">
+                <div class="clearfix pbs">
+                    <svg class="micon micon-photoshop">
+                        <use xlink:href="#micon-photoshop"></use></svg>
+                </div>
+            </div>
+            <div class="tutorial-content icon-offset">
+                                                                                        <h4><a href="/frontend-uroki">Front End</a></h4>
+                                                                                        <p>Уроки по фронтэнд-разработке</p>
+                                    </div>
+            </div>
+                    </div>
+    </div>
+";s:12:"content_meta";N;}

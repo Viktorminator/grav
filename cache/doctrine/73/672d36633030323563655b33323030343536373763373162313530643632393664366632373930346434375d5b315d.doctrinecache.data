@@ -1,0 +1,142 @@
+1473287274
+a:2:{s:7:"content";s:8326:"<blockquote>
+<p>Если вы столкнулись с проблемами, задавайте вопросы в комментариях.</p>
+</blockquote>
+<p>Разделы этой серии статей:</p>
+<ul>
+<li>Простой блог на базе Lavarel 5 – Вступление</li>
+<li>Простой блог на базе Lavarel 5 (часть-1) - Создаем базу данных</li>
+<li>Простой блог на базе Lavarel 5 (часть-2) -  Маршруты и модели</li>
+<li>Простой блог на базе Lavarel 5 (часть-3) -  Контроллеры</li>
+<li>Простой блог на базе Lavarel 5 (часть-4) -  Строим клиентскую часть</li>
+<li>Простой блог на базе Lavarel 5 (часть-5 ) - Подключаем (добавляем) редактор tinyMCE и профиль пользователя</li>
+</ul>
+<p>В этой статье мы создадим таблицы базы данных для того чтобы сохранять информацию. Для генерации таблиц будем использовать конструкторы Migrations и Schema.
+Начнем с настройки базы данных. Для этого нужно изменить  файл с расширением .env.
+.env - это скрытый файл в корневой папке приложения. (в данном случае в папке блога)</p>
+<pre><code class="language-yaml">DB_HOST=localhost
+DB_DATABASE=your_database_name
+DB_USERNAME=database_username
+DB_PASSWORD=database_password</code></pre>
+<p>Настройте свою базу в blog &gt;&gt; config &gt;&gt; database.php изменив значение по умолчанию.</p>
+<pre><code class="language-php">&lt;?php
+return [
+...
+...
+// set database
+default' =&gt; 'mysql',
+
+...
+...</code></pre>
+<p>Для других настроек почитайте Настройка базы данных на базе Lavarel 5
+Теперь произведем миграции, используя следующие команды:</p>
+<pre><code class="language-bash">php artisan make:migration posts
+php artisan make:migration comments</code></pre>
+<p>В blog &gt;&gt; database &gt;&gt; migrations появятся два новых файла с окончаниями posts.php и comments.php. Обратите внимание,  что до этого там уже были два файла. Первый (2014_10_12_000000_create_users_table.php) генерирует таблицу для пользователей в базе данных. Второй ( 2014_10_12_100000_create_password_resets_table.php ) - таблицу для восстановления пароля.
+Создаем таблицу для сообщений (постов)
+Откройте файл, который был создан с помощью миграции, с окончанием posts.php в папке migrations и вставьте этот код. Этот код создает таблицу под названием posts в базе данных.</p>
+<pre><code class="language-php">&lt;?php
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+class Posts extends Migration {
+ /**
+  * Run the migrations.
+  *
+  * @return void
+  */
+ public function up()
+ {
+   // blog table
+  Schema::create('posts', function(Blueprint $table)
+  {
+    $table-&gt;increments('id');
+    $table -&gt; integer('author_id') -&gt; unsigned() -&gt; default(0);
+    $table-&gt;foreign('author_id')
+        -&gt;references('id')-&gt;on('users')
+        -&gt;onDelete('cascade');
+    $table-&gt;string('title')-&gt;unique();
+    $table-&gt;text('body');
+    $table-&gt;string('slug')-&gt;unique();
+    $table-&gt;boolean('active');
+    $table-&gt;timestamps();
+  });
+ }
+ /**
+  * Reverse the migrations.
+  *
+  * @return void
+  */
+ public function down()
+ {
+   // drop blog table
+   Schema::drop('posts');
+ }
+}</code></pre>
+<p>Migration это основной класс laravel, который используется для контроля версий базы данных. Этот класс содержит две функции up() и down(). Функция up() выполняется при выполнении миграции. Функция down() отменяет функцию  up() и выполняется тогда, когда нужно откатить последнюю миграцию или перезапустить базу данных.
+Schema это еще один класс Lavarel, который создает и изменяет таблицы БД.</p>
+<pre><code class="language-php">
+Schema::create('posts', function(Blueprint $table)
+   {
+     $table-&gt;increments('id');
+     $table -&gt; integer('author_id') -&gt; unsigned() -&gt; default(0);
+     $table-&gt;foreign('author_id')
+         -&gt;references('id')-&gt;on('users')
+         -&gt;onDelete('cascade');
+     $table-&gt;string('title')-&gt;unique();
+     $table-&gt;text('body');
+     $table-&gt;string('slug')-&gt;unique();
+     $table-&gt;boolean('active');
+     $table-&gt;timestamps();
+   });</code></pre>
+<p>В этой части кода мы вызываем функцию create(), которая принимает 2 аргумента. Первый аргумент - это имя таблицы в которой мы работаем, второй - функция замыкания(closure), создающая столбцы в этой таблице.$table - это пример такой таблицы. Laravel предусматривает встроенные функции для типов столбцов в БД. Например, increments('id') создает столбцы с именем 'id', которое является основным ключем(автоматически возрастает). Чтобы ознакомиться более детально прочтите  migrations and schema builder.
+Создаем таблицу для комментариев:
+Как и раньше вставьте этот код в файл с окончанием commets.php в папке migrations.</p>
+<pre><code class="language-php">&lt;?php
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+class Comments extends Migration {
+ /**
+  * Run the migrations.
+  *
+  * @return void
+  */
+ public function up()
+ {
+   //id, on_blog, from_user, body, at_time
+   Schema::create('comments', function(Blueprint $table)
+   {
+     $table-&gt;increments('id');
+     $table -&gt; integer('on_post') -&gt; unsigned() -&gt; default(0);
+     $table-&gt;foreign('on_post')
+         -&gt;references('id')-&gt;on('posts')
+         -&gt;onDelete('cascade');
+     $table -&gt; integer('from_user') -&gt; unsigned() -&gt; default(0);
+     $table-&gt;foreign('from_user')
+         -&gt;references('id')-&gt;on('users')
+         -&gt;onDelete('cascade');
+     $table-&gt;text('body');
+     $table-&gt;timestamps();
+   });
+ }
+ /**
+  * Reverse the migrations.
+  *
+  * @return void
+  */
+ public function down()
+ {
+   // drop comment
+   Schema::drop('comments');
+ }
+}</code></pre>
+<p>Таблица пользователя:
+Миграция для таблицы пользователя уже написана в файле 2014_10_12_000000_create_users_table.php. Но нам требуется еще добавить роли пользователю, поэтому просто вставьте одну строчку в этот файл. </p>
+<pre><code>
+$table-&gt;string('password', 60);
+// add this one line
+$table-&gt;enum('role',['admin','author','subscriber'])-&gt;default('author');
+$table-&gt;rememberToken();</code></pre>
+<p>Мигрируем в БД:
+Создадим таблицы в БД используя команду:</p>
+<pre><code>php artisan migrate</code></pre>
+<p>Эта команда сгенерирует все таблички в БД. Вот мы и создали таблицы в базе данных для нашего приложения. После миграции попробуйте перейти по этой ссылке http://localhost:8000/auth/log</p>";s:12:"content_meta";N;}

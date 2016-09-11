@@ -1,0 +1,38 @@
+.micon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.micon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.micon-meteor {
+    width: 1.01953125em;
+}
+
+.micon-phalcon {
+    width: 0.876953125em;
+}
+
+.micon-react {
+    width: 1.11328125em;
+}
+
+.micon-photoshop {
+    width: 1.025390625em;
+}
+.fs0 {
+    font-size: 16px;
+}
+.fs1 {
+    font-size: 32px;
+}

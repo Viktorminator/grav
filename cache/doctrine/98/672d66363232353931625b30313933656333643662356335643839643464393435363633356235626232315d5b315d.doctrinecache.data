@@ -1,0 +1,265 @@
+1473483784
+a:2:{s:7:"content";s:17287:"<p>Есть куча причин любить React Native. React Native - это трендовый опенсорсный проект от Facebook Inc., который делает возможным создание эфективных и продуктивных приложений для мобильных устройств для iOS и Android с помощью JavaScript.</p>
+<p>React-Native обеспечивает нативные модули и компоненты для обеих платформ для нативных возможностей устройств. Есть также большое множество плагинов, разрабатываемых сообществом для использования с React-Native.</p>
+<p>Начинать с самого старта сложновато и занимает много времени. Но у меня для вас хорошие новости - есть куча опенсорсных React-Native заготовок и наборов пользовательских интерфейсов доступных для создания приложения с помощью нескольких строчек кода. Ниже приведены мои любимые стартовые наборы и заготовки.</p>
+<p>Эти стартовые наборы содержат лучшие практики React Native разработки, они были созданы для обеих платформ - Android и iOS. Они содержат различные инструменты, патерны и практики разработки. Они не могут подходить для всех случаев и для каждого, но можно кастомизировать их под свои нужды или просто взять как пример и сделать свой велосипед.</p>
+<p><img src="http://cdn1.icicletech.com/media/l_React_Native_Starter_Kits_Cover.png" alt="React-Native-Boilerplates" /></p>
+<h2><a href="https://infinite.red/ignite">1. Ignite </a></h2>
+<p><a href="https://infinite.red/ignite"><img src="http://cdn3.icicletech.com/media/l_l_React-Native-Ignite.png" alt="Ignite" /></a></p>
+<ul>
+<li>URL:<a href="https://infinite.red/ignite">infinite.red/ignite</a></li>
+<li>Github: <a href="https://github.com/infinitered/ignite">github.com/infinitered/ignite</a></li>
+<li>Разработчики: <a href="https://infinite.red/">Infinite Red, Inc.</a></li>
+<li>
+<p>Платформа</p>
+<ul>
+<li>iOS</li>
+<li>Android</li>
+</ul>
+</li>
+<li>
+<p>Популярность (Состоянием на: 18/08/16)</p>
+<ul>
+<li>Контрибуторы: 22</li>
+<li>Звёзды: 2147</li>
+</ul>
+</li>
+</ul>
+<p>Ignite - это активный React Native репозиторий, доступный для начинающих и профессионалов. Любой может установить командную строку и генерировать какой-угодно компонент используя Ignite. Отличный старт для начинающих.</p>
+<p>Можна из командной строки сгенерировать компонент. Генераторы работаю со структурой папок Ignite. Он установит страницы, что заняло бы у вас недели работы. Он включает примеры, шаблоны, компоненты, стили, анимацию, тестовые экраны и т.д.</p>
+<p>Особенности:</p>
+<ul>
+<li>CLI генераторы</li>
+<li>Документация</li>
+<li>Лучшие практики</li>
+<li>Convenience Screens</li>
+<li>Примеры компонентов</li>
+<li>Примеры использования</li>
+<li>API Doc тестирование</li>
+<li>Темы</li>
+<li>Информация об устройстве</li>
+</ul>
+<h2><a href="http://getpepperoni.com/">2. Pepperoni</a></h2>
+<p><a href="http://getpepperoni.com/"><img src="http://cdn3.icicletech.com/media/l_l_Pepperoni-react-native-templates.png" alt="Pepperoni" /></a></p>
+<ul>
+<li>URL: <a href="http://getpepperoni.com/">getpepperoni.com/</a></li>
+<li>Github: <a href="https://github.com/futurice/pepperoni-app-kit">github.com/futurice/pepperoni-app-kit</a></li>
+<li>Разработчики: <a href="http://futurice.com/">Futurice</a></li>
+<li>
+<p>Платформа:</p>
+<ul>
+<li>iOS</li>
+<li>Android</li>
+</ul>
+</li>
+<li><a href="https://www.icicletech.com/react-native-development">React Native</a> Version: v0.29</li>
+<li>
+<p>Популярность (Состоянием на: 18/08/16)</p>
+<ul>
+<li>Контрибуторы: 9</li>
+<li>Звёзды: 2270</li>
+</ul>
+</li>
+</ul>
+<p>Pepperoni - это план для построения кроссплатформенных приложений быстро с готовыми блоками для общепринятых фич мобильных приложений. Pepperoni создан на солидной основе используя современную архитектуру и лучшие практики.</p>
+<p>Особенности:</p>
+<ul>
+<li>Нативные мобильные приложения, созданные с помощью <a href="https://www.icicletech.com/react-native-development">React Native</a> Facebook и Redux</li>
+<li>Подготовленный к облакам Heroku, Amazon Web Services, Google Cloud Платформе, Microsoft Azure и другим</li>
+<li>Готовые билды компонентов для общих случаев</li>
+<li>Логин, аутентификация и управление пользователями с помощью Auth0</li>
+<li>Whatsapp-стиль и отправка сообщений с помощью SendBird</li>
+<li>Push уведомления</li>
+<li>Бекэнд готовый к облакам</li>
+<li>Горячее обновление приложения к пользователям с помощью CodePush</li>
+</ul>
+<h2><a href="https://github.com/bartonhammond/snowflake">3. Snowflake </a></h2>
+<p><a href="https://github.com/bartonhammond/snowflake"><img src="http://cdn1.icicletech.com/media/l_Screenshot_from_2016-08-17_22-22-21.png" alt="Snowflake" /></a></p>
+<ul>
+<li>Github: <a href="https://github.com/bartonhammond/snowflake">github.com/bartonhammond/snowflake</a></li>
+<li>Разработчики: <a href="https://github.com/bartonhammond">Barton Hammond</a></li>
+<li>
+<p>Платформа</p>
+<ul>
+<li>iOS</li>
+<li>Android</li>
+</ul>
+</li>
+<li>
+<p>Популярность (Состоянием на: 18/08/16)</p>
+<ul>
+<li>Контрибуторы: 19</li>
+<li>Звёзды: 2178</li>
+</ul>
+</li>
+</ul>
+<p>Snowflake поддерживает горячую перезагрузку состояния. Используя Redux и Immutable, состояние приложения тестируется с помощью Jest.</p>
+<p>Особенности:</p>
+<ul>
+<li>Поддерживает горячую перезагрузку состояния</li>
+<li>Взаимодействие форм</li>
+<li>Навигация</li>
+<li>Предсказываемый и последовательный стиль</li>
+<li>Независимый UI</li>
+<li>Обработка на сервере</li>
+<li>Уменьшает тоску</li>
+</ul>
+<h2><a href="http://nativebase.io/">4. NativeBase</a></h2>
+<p><a href="http://nativebase.io/"><img src="http://cdn2.icicletech.com/media/l_l_Native-Base-React-Native.png" alt="NativeBase" /></a></p>
+<ul>
+<li>URL: <a href="http://nativebase.io/">nativebase.io/</a></li>
+<li>Github: <a href="https://github.com/GeekyAnts/NativeBase">github.com/GeekyAnts/NativeBase</a></li>
+<li>Разработчики: <a href="http://geekyants.com/">GeekyAnts</a></li>
+<li>
+<p>Платформа:</p>
+<ul>
+<li>iOS</li>
+<li>Android</li>
+</ul>
+</li>
+<li><a href="https://www.icicletech.com/react-native-development">React Native</a> Version: v0.26.0 to v0.27.1</li>
+<li>
+<p>Популярность (Состоянием на: 18/08/16)</p>
+<ul>
+<li>Контрибуторы: 9</li>
+<li>Звёзды: 1543</li>
+</ul>
+</li>
+</ul>
+<p>NativeBase - это бесплатный и опенсорсный фреймворк, который позволяет разработчикам создавать высококачественные мобильные React Native iOS и Android приложения с помощью ES6. NativeBase создаёт слой на вершине React Native, который даёт вам базовый набор компонентов для разработки приложений. Это помогает вам создавать первокласные приложения на нативной платформе.</p>
+<p>Особенности:</p>
+<ul>
+<li>Высокопроизводительный UI</li>
+<li>Единая кодовая база для <a href="https://www.icicletech.com/mobile-development">iOS</a> и Android</li>
+<li>Хорошая документация</li>
+<li>опенсорсный</li>
+</ul>
+<h2><a href="https://github.com/este/este">5. Este</a></h2>
+<p><a href="https://github.com/este/este"><img src="http://cdn1.icicletech.com/media/l_React-Native-Este.jpeg" alt="Este" /></a></p>
+<ul>
+<li>Github: <a href="https://github.com/este/este">github.com/este/este</a></li>
+<li>Разработчики: <a href="https://about.me/danielsteigerwald">Daniel Steigerwald</a> и the community.</li>
+<li>
+<p>Платформа</p>
+<ul>
+<li>iOS</li>
+<li>Android</li>
+</ul>
+</li>
+<li><a href="https://www.icicletech.com/react-native-development">React Native</a> Version: 0.28.0</li>
+<li>
+<p>Популярность (Состоянием на: 18/08/16)</p>
+<ul>
+<li>Контрибуторы: 81</li>
+<li>Звёзды: 3480</li>
+</ul>
+</li>
+</ul>
+<p>Este - это стак разработки для универсальных React прилоежний. Он имеет универсальную архитектуру, где стек - это то браузер, мобильное устройство и сервер. Este - отличная вещь даже для статических страниц. Он может изящно добавляться к любой платформе.</p>
+<p>Особенности:</p>
+<ul>
+<li>Один код на все платформы (браузер, сервер, нативные мобильные устройства)</li>
+<li>Рендер на сервере</li>
+<li>Универсальная выборка данных (уникальный подход без реакт-маршрутизатора)</li>
+<li>Необязательный рендеринг в HTML-файлы (для статического хостинга)</li>
+<li>Универсальная интернационализация с переключением языка во время выполнения</li>
+<li>Универсальные формы с универсальной валидацией</li>
+</ul>
+<h2><a href="https://github.com/jhabdas/react-native-webpack-starter-kit">6. Webpack Starter Kit </a></h2>
+<p><a href="https://github.com/jhabdas/react-native-webpack-starter-kit"><img src="http://cdn2.icicletech.com/media/l_l_Webpack_starter_kit.png" alt="Webpack Starter Kit" /></a></p>
+<ul>
+<li>Github: <a href="https://github.com/jhabdas/react-native-webpack-starter-kit">github.com/jhabdas/react-native-webpack-starter-kit</a></li>
+<li>Разработчики: <a href="https://habd.as/">Josh Habdas</a></li>
+<li>
+<p>Платформа</p>
+<ul>
+<li>iOS</li>
+<li>Android</li>
+</ul>
+</li>
+<li><a href="https://www.icicletech.com/react-native-development">React Native</a> Version: 0.28.0</li>
+<li>
+<p>Популярность (Состоянием на: 18/08/16)</p>
+<ul>
+<li>Контрибуторы: 8</li>
+<li>Звёзды: 748</li>
+</ul>
+</li>
+</ul>
+<p>Простое управление объектами для засева приложений, созданных на React Native. Используется Babel 6 для ES7 JavaScript и Webpack как дев-сервер и сборщик мобулей. Связка статического кода с помощью ESLint и формирования вывода в консоли, плюс source maps для отладки в браузере</p>
+<p>Особенности:</p>
+<ul>
+<li>Минимальные зависимости</li>
+<li>Используются последние React Native стабильне релизы</li>
+<li>Управление объектами с помощью Webpack</li>
+<li>JS сборки генерируются динамически с помощью Webpack Dev Server</li>
+<li>Статический анализ кода с помощью ESLint</li>
+<li>Сохраняет свежие зависимости используя Greenkeeper</li>
+<li>Мониторинг уязвимостей с помощью Snyk</li>
+<li>Поддерживает согласованность кода с помощью EditorConfig</li>
+<li>Интегрирован с  webpack-уведомителем для уведомлений на десктопе для OS X</li>
+<li>Пример интеграции услуг CI с использованием Travis</li>
+</ul>
+<h2><a href="https://github.com/LeoLeBras/react-native-redux-starter-kit">7. React Native Redux Starter Kit</a></h2>
+<p><a href="https://github.com/jhabdas/react-native-webpack-starter-kit"><img src="http://cdn1.icicletech.com/media/l_react-native-redux-starter-kit.png" alt="Redux Starter Kit" /></a></p>
+<ul>
+<li>Github: <a href="https://github.com/LeoLeBras/react-native-redux-starter-kit">github.com/LeoLeBras/react-native-redux-starter-kit</a></li>
+<li>Разработчики: <a href="http://leolebras.com/">LeoLeBras</a></li>
+<li>
+<p>Платформа:</p>
+<ul>
+<li>iOS</li>
+<li>Android</li>
+</ul>
+</li>
+<li>
+<p>Популярность (Состоянием на: 18/08/16)</p>
+<ul>
+<li>Контрибуторы: 2</li>
+<li>Звёзды: 140</li>
+</ul>
+</li>
+<li>
+<p>Стек</p>
+<ul>
+<li>React Native version: 0.26.0</li>
+<li>Redux: 3.5.x</li>
+<li>Babel: 6.x.x</li>
+</ul>
+</li>
+<li>
+<p>Требования:</p>
+<ul>
+<li>Node 4.x or newer</li>
+<li>Xcode for <a href="https://www.icicletech.com/mobile-development">iOS</a> development</li>
+<li><a href="https://www.icicletech.com/mobile-development">Android</a> Studio for <a href="https://www.icicletech.com/mobile-development">Android</a> development</li>
+<li><a href="https://www.icicletech.com/mobile-development">Android</a> SDK 23.0.2 or newer</li>
+<li>Genymotion for <a href="https://www.icicletech.com/mobile-development">Android</a> emulation</li>
+<li><a href="https://www.icicletech.com/mobile-development">Android</a> Lollipop or newer version</li>
+</ul>
+</li>
+</ul>
+<p>Начальная заготовка для мобильных приложений используя React Native и Redux.</p>
+<h2><a href="https://github.com/mcnamee/react-native-starter-app">8. React Native Starter App</a></h2>
+<p><a href="https://github.com/mcnamee/react-native-starter-app"><img src="http://cdn2.icicletech.com/media/l_react-native-starter-app.png" alt="React Native Starter App" /></a></p>
+<p>React Native Starter App - это ещё один классный шаблон для приложений React Native Android и iOS. Он работает на Redux – контейнером с предсказуемым состоянием, который работает одинаково в разных средах.</p>
+<ul>
+<li>Github: <a href="https://github.com/mcnamee/react-native-starter-app">github.com/mcnamee/react-native-starter-app</a></li>
+<li>Разработчики: <a href="http://mcnam.ee">Matt Mcnamee</a></li>
+<li>
+<p>Платформа</p>
+<ul>
+<li>iOS</li>
+<li>Android</li>
+</ul>
+</li>
+<li>
+<p>Популярность (Состоянием на: 18/08/16)</p>
+<ul>
+<li>Контрибуторы: 1</li>
+<li>Звёзды: 165</li>
+</ul>
+</li>
+</ul>
+<p>Его классно использовать с одним из самых гибких языков с наиболее популярными платформами. С React-Native разработчикам не нужно изучать специфическое для каждой платформы программирование. Вы можете создавать высококачественные приложения, просто зная JavaScript и компоненты, котоыре идут из коробки React. Процесс обдумывания React-Native является не только уникальным, но и очень интересным.</p>
+<p>Любой может взять один из этих стартовых наборов и легко прыгнуть в мир мобильной разработки. React-Native - это потрясная поддержка от сообщество мобильных разработчиков со всего мира.</p>";s:12:"content_meta";N;}
